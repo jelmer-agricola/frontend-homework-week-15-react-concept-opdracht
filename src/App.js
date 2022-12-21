@@ -11,7 +11,7 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<Home/>} />
-                <Route path="/:id" element={<Subreddit/>} />
+                <Route path="/subreddit/:id" element={<Subreddit/>} />
             </Routes>
 <footer>In opdracht van NOVI hogeschool © </footer>
 

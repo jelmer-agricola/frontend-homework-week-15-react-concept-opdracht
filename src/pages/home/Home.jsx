@@ -54,11 +54,12 @@ function Home() {
                             <article className="subreddit-article" key={reddit.data.id}>
                                 <a href={reddit.data.url} target="_blank" className="subreddit-article-title"><h3> {reddit.data.title}</h3></a>
                                 <div className="article-content">
-                                    <p><Link to={reddit.data.subreddit}> {reddit.data.subreddit_name_prefixed}</Link>
+                                    <p><Link to={`/subreddit/${reddit.data.subreddit}`}> {reddit.data.subreddit_name_prefixed}</Link>
                                     </p>
                                     <p>Comments {reddit.data.num_comments} — Ups {reddit.data.ups}</p>
                                 </div>
                             </article>
+
 
                         );
                     })}
